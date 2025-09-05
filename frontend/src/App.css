@@ -1,0 +1,26 @@
+/* App.css */
+
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #add8e6; /* light blue */
+  font-family: Arial, sans-serif;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form-box {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  min-width: 300px;
+  text-align: center;
+}
+

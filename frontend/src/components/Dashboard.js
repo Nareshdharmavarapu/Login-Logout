@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import API_URL from '../utils/api';
 
 function Dashboard({ setLoggedIn }) {
   const navigate = useNavigate();

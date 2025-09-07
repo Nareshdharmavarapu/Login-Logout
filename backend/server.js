@@ -21,6 +21,11 @@ app.use(session({
   cookie: { secure: false } // secure: true in production with HTTPS
 }));
 
+app.get('/', (req, res) => {
+  res.send('Backend is working!');
+});
+
+
 app.use('/api', authRoutes);
 
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));

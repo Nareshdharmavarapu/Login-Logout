@@ -10,7 +10,7 @@ function Login({ setLoggedIn }) {
 
   const handleLogin = async () => {
     try {
-      await axios.post('http://localhost:5000/api/login', { email, password });
+      await axios.post(`${API_URL}/api/login`, { email, password });
       setLoggedIn(true);
       navigate('/dashboard');
     } catch (err) {
@@ -32,4 +32,3 @@ function Login({ setLoggedIn }) {
 }
 
 export default Login;
-

@@ -8,7 +8,7 @@ function Dashboard({ setLoggedIn }) {
 
   const handleLogout = async () => {
     try {
-      await axios.post('http://localhost:5000/api/logout');
+      await axios.post(`${API_URL}/api/logout`);
       setLoggedIn(false);
       navigate('/');
     } catch (err) {
@@ -27,5 +27,3 @@ function Dashboard({ setLoggedIn }) {
 }
 
 export default Dashboard;
-
-

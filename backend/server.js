@@ -25,6 +25,10 @@ app.get('/', (req, res) => {
   res.send('Backend is working!');
 });
 
+app.get('/api/test', (req, res) => {
+  res.json({ success: true, message: 'API test route is working!' });
+});
+
 
 app.use('/api', authRoutes);
 

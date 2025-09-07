@@ -7,6 +7,14 @@ const authRoutes = require('./routes/auth');
 const app = express();
 const PORT = 5000;
 
+
+
+app.use(cors({
+  origin: 'https://login-logout-ppyf.vercel.app', // ✅ YOUR frontend domain
+  credentials: true
+}));
+
+
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
